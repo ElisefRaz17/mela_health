@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MelaHealth</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <nav>
+        <div id="nav">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Resources</li>
+                <li><a href="#" id="login" style="float: right;">Login</a></li>
+                <li><a href="#" id="signup" style="float: right;">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="head">
+        <section id="headertext">
+            <h1>MelaHealth</h1>
+            <h2>increasing equity in healthcare</h2>
+            <a href="#" id="signupnow">Sign Up Now!</a>
+        </section>
+        <aside id="docimg">
+            <img src="{{url_for('static', filename='images/header.png')}}" id="headerimg">
+        </aside>
+    </div>
+    <div class="home">
+        <section class="info" id="easyacc">
+            <h3>Easy access to health resources</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, dolores, natus ut eveniet similique doloremque perspiciatis rem maiores eum vitae asperiores incidunt. Cupiditate, explicabo vel.</p>
+        </section>
+        <aside id="infopic">
+            <img src="{{url_for('static', filename='images/resources.png')}}" id="recimg">
+        </aside>
+    </div>
+    <div class="home">
+        <section class="info" id="questions">
+            <h3>Get your questions answered by professionals</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, dolores, natus ut eveniet similique doloremque perspiciatis rem maiores eum vitae asperiores incidunt. Cupiditate, explicabo vel.</p>
+        </section>
+        <aside id="ques">
+            <img src="{{url_for('static', filename='images/questions.png')}}" id="qimg">
+        </aside>
+    </div>
+    <div class="home">
+        <section class="info" id="doctorsearch">
+            <h3>Find the right doctor for you</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, dolores, natus ut eveniet similique doloremque perspiciatis rem maiores eum vitae asperiores incidunt. Cupiditate, explicabo vel.</p>
+        </section>
+        <aside id="infopic">
+            <img src="{{url_for('static', filename='images/doctor.png')}}" id="docimg">
+        </aside>
+    </div>
+    <footer>
+        <p>Copyright&copy; MelaHealth</p>
+    </footer>
+</body>
+</html>
