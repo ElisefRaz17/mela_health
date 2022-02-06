@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Doctors by Zipcode</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <!--<script async defer src="https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyCaouVmtg_xngRJbOb_GjtZ__sSPuRfyME&components=postal_code:{}".format()-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaouVmtg_xngRJbOb_GjtZ__sSPuRfyME&callback=initMap"
+    type="text/javascript"></script>
+    <script type="text/javascript">
+    function initMap() {
+        new google.maps.Map(document.getElementById('map'), {
+            center: {lat: {{lati}}, lng: {{long}}},
+            zoom: 16
+          });
+    }
+    </script>
+</head>
+<body>
+<div class="container">
+    <h1>Doctors Near You!</h1>
+    <div id="map" style="width:100%; height:500px;"></div>
+</div>
+</body>
+</html>
