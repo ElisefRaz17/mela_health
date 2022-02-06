@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Welcome, {{ name }}!
+</h1>
+
+
+
+
+
+<div class="user-profile">
+<div class="page-header">
+<h2>User Profile</h2>
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<div class="panel panel-primary">
+<div class="panel-heading">Email Address</div>
+<div class="panel-body">{{current_user.email}}</div>
+</div>
+
+<div class="panel panel-info">
+<div class="panel-heading">Account Actions</div>
+<div class="panel-body"><a href="#">Change Email</a></div>
+<div class="panel-body"><a href="#">Change Password</a></div>
+{% if not current_user.email_confirmed %}
+<div class="panel-body"><a href="#">Resend Email Confirmation</a></div>
+{% endif %}
+</div>
+
+{% endblock %}
